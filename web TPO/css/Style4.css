@@ -1,0 +1,539 @@
+
+/*----- ----- For mobile phones: ----- -----*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(129, 129, 129, 0.932);
+    color: white;
+    background-color: #fa4166;
+    transition-duration: 0.4s
+}
+
+button:hover{
+    background-color: #FFB7C5;
+}
+
+.btn{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.color-acento{ color:red; }
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: red;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.nav-brand {
+    width: 50px;
+  }
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #fa4166;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+/* ----- -----  style recetas.html ----- ----- */
+.main {
+    max-width: 1000px;
+    width: 90%;
+    border-bottom: 1px solid #7c7c7c42;
+    margin: 10px auto;
+}
+.main #contenido_central {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+.main .contenido_central .imagen_principal {
+
+    width: 100%;
+}
+.main .contenido_central .imagen_principal img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px ;
+}
+
+.main .contenido_central .datos {
+    width: 100%;
+
+}
+
+.datos {
+    padding: 8px;
+}
+
+.datos .titulo {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+  
+.datos .descripcion {
+    padding: 5px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+#Gastronomia{
+    background-color: rgb(238, 238, 238);
+    color: rgb(12, 12, 12);
+    text-align: center;
+}
+
+#Gastronomia .container{
+    padding: 150px 12px;
+}
+
+#Gastronomia h2{
+    margin-top: 0;
+    font-size: 4em;
+}
+
+#Gastronomia h3{
+    margin-top: 0;
+    font-size: 2em;
+    color: #e7dfdd;
+}
+
+#Gastronomia p{
+    display: none;
+    color: #e7dfdd;
+}
+
+#Gastronomia .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#Gastronomia .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/mabodon2.jpg);
+
+}
+
+#Gastronomia .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/cards2.png)
+}
+
+#Gastronomia .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/receta-Taiyaki.jpg)
+
+}
+
+#destacados{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#destacados .container{
+    padding: 150px 12px;
+    padding-bottom: 40px;
+}
+
+#destacados h2{
+    margin-top: 0;
+    font-size: 2.7em;
+}
+
+#destacados p{
+    display: none;
+}
+
+#destacados .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/shīsā3.png);
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/hero2.jpg)
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/receta-Taiyaki.jpg)
+
+}
+/* ----- -----  style Manbodon.html ----- ----- */
+#recetas-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/mabodon2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#recetas-titulo h1{
+    color: white;
+
+}
+    
+
+.recetas-content #ingredientes {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}
+#recetas-content #preparacion{
+    text-align: center;
+    padding: 90px 12px;
+    }
+
+#recetas-content .lista-ingredientes{
+    box-sizing: border-box;
+}
+
+#recetas-content .lista-ingredientes li{
+    display: list-item;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#recetas-content #preparacion h3{
+    font-size: 1.5em;
+}
+
+#recetas-content #preparacion p{
+    margin: 1em;
+}
+/* ----- -----  style ramen.html ----- ----- */
+#recetas-titulo-ramen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/Ramen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#recetas-titulo-ramen h1{
+    color: white;
+
+}
+/* ----- -----  style taiyaki.html ----- ----- */
+#recetas-titulo-taiyaki{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/media/receta-Taiyaki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#recetas-titulo-taiyaki h1{
+    color: white;
+
+}
+
+
+
+
+
+/* ----- -----  Footer ----- ----- */
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 20px;
+    font-size: 1em;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* ----- -----  ----- ----- Mediaqueries ----- ----- ----- ----- */
+/* Tablet */
+
+@media (min-width: 768px)
+{
+
+    header{
+        position: relative;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    h3{
+        padding: .3em;
+        font-size: 2em;
+        
+    }
+
+    #Gastronomia .Gastronomia-Recetas{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    #Gastronomia p{
+        display: block;
+        margin-bottom: 20px;
+        padding-top: 2em;
+    }
+
+    #Gastronomia h2{
+        margin-top: 0;
+        font-size: 2.6em;
+    }
+
+    #Gastronomia h3{
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    #Gastronomia .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #destacados{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    #destacados p{
+        display: block;
+        margin-bottom: 20px;
+        padding-top: 2em;
+    }
+
+    #destacados h2{
+        font-size: 3.3em;
+    }
+
+    #destacados h3{
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    #destacados .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+.main {
+    max-width: 1000px;
+    width: 90%;
+    border-bottom: 1px solid #7c7c7c42;
+    margin: 10px auto;
+}
+  
+  .main .contenido_central {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .main .contenido_central .imagen_principal {
+    width: 80%;
+  }
+  
+  .main .contenido_central .imagen_principal img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+  
+ .main .contenido_central .datos {
+    width: 50%;
+    background: #444444;
+    border-radius: 0 15px 15px 0;
+  }
+  
+
+  
+  .datos {
+    padding: 8px;
+  }
+  
+  .datos .titulo {
+    font-size: 24px;
+    color: #e7dfdd;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .datos .descripcion {
+    color: #ffffff;
+    padding: 5px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}
+/* Portatil */
+@media (min-width: 1024px) 
+{
+    #Gastronomia .Gastronomia-Recetas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: 70px 0;
+    }
+    #destacados .articulos-destacados{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: 5px 0;
+    }
+
+    #recetas-content #preparacion{
+        width: 100%;
+        vertical-align: top;
+        display: inline-block;
+    }
+}
